@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8"/> <!--for ukrainian text-->
+  <title>AI Pet</title> <!--browser tab title-->
+  <link rel="icon" href="img/icon.png"> <!--browser tab icon-->
+  <link rel="stylesheet" href="style.css"> <!--added css file-->
+  <script src="script.js"></script> <!--added javascript file-->
+</head>
+
+<header>
+
+  <div class="headerLeft">
+
+    <img src="img/icon.png" alt="Website Logo">
+
+    <h1 id="logotext">My Artificial Inteligence Pet</h1>
+
+  </div>
+
+  <div class="headerLink">
+
+    <nav>
+      <button class="button"><a href="https://chat.openai.com/auth/login" target="_blank">ChatGPT</a></button>
+      <button class="button"><a href="https://gemini.google.com/app" target="_blank">Gemini</a></button>
+      <button class="button"><a href="https://copilot.microsoft.com/" target="_blank">Copilot</a></button>
+    </nav>
+
+  </div>
+
+</header>
+
+<body>
+
+  <div class="mainContent">
+
+    <div class="image">
+
+      <img src="" id="portrait" onclick="pulsePortrait()" height="450px" width="400px">
+
+    </div>
+    
+    <div class="petInfo">
+    
+      <h2>Meet My AI Pet</h2>
+
+      <div id="petButtons">
+        <img src="img/food.png" id="food" onclick="feedPet()" height="50px" width="50px">
+        <img src="img/water.png" id="water" onclick="giveWater()" height="50px" width="50px">
+        <img src="img/toy.png" id="toy" onclick="playWithPet()" height="50px" width="50px">
+      </div>
+      
+      
+        <div id="petStatus">
+          <p id="petMood"></p>
+          <p id="hunger">%</p>
+          <p id="thirst">%</p>
+          <p id="happiness">%</p>
+        </div>
+
+    </div>
+
+  </div>
+  
+</body>
+
+<footer>
+  
+  <div class="footerContent">
+
+    <p class="footerParagraph">Made during
+    <a class="footerLink" href="https://tobm.org.ua" target="_blank">TOBM</a>
+    IT camp!
+    </p>
+  
+  </div>
+  
+</footer>
+
+</html>
